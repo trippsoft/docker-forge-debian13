@@ -6,6 +6,7 @@ FROM docker.io/library/debian:trixie
 RUN apt-get update -y
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
         locales \
+        python3 \
         systemd \
         systemd-sysv \
         sudo \
